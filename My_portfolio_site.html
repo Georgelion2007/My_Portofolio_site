@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George C. Maduabuchi | Portfolio</title>
+    <link href="/CSS/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensures the navbar stays on top of other content */
+            background-color: #ffffff; /* Add a background color so content behind it doesn't show through */
+        }
+        /* Navbar Links */
+        .nav-link {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #0d6efd !important;
+            text-decoration: underline;
+        }
+
+        /* Profile & Card Image Custom Heights */
+        .profile-img {
+            height: 250px;
+            width: 250px;
+            object-fit: cover;
+        }
+        .project-card-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .social-icon {
+            height: 4rem;
+            width: 4rem;
+            object-fit: cover;
+        }
+
+        /* Section Backgrounds & Spacing */
+        #About, #Project, #Contact {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Hover Card Effect */
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .hover-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25) !important;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+
+    <header class="w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary px-4 sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder fs-2 text-warning" href="#">Coder</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Project">Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-fluid min-vh-100 d-flex align-items-center justify-content-center py-5" id="Home">
+            <div class="text-center">
+                <div>
+                    <img src="/assets/images/Gemini_Generated_Image_cwo9sycwo9sycwo9.png" alt="Profile" class="profile-img img-fluid border border-5 rounded-circle mx-auto d-block border-warning">
+                </div>
+                <div class="my-4">
+                    <h1 class="text-warning fw-bold">GEORGE .C. MADUABUCHI</h1>
+                    <p class="text-primary text-decoration-underline fs-5">Web Developer (FRONTEND DEV...)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="About" class="container py-5 min-vh-100 d-flex flex-column justify-content-center"> 
+            <h2 class="text-success fw-bold text-center fs-2 mb-4">ABOUT <span class="text-warning">ME</span></h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="fs-5">Hey, my name is <span class="text-success fw-bold">George .C. Maduabuchi</span>, I'm from Nigeria. 
+                    I'm a lover of computers, technology, programming, and ICT work. 
+                    I'm a self-taught developer who enjoys building things for the web and desktop.</p>
+                    
+                    <p class="fs-5">My goal is to become a Full-Stack Developer and work on products that impact people around the world. Currently open to internships and freelance projects.</p>
+
+                    <h3 class="py-3 text-warning">I specialize in:</h3>
+                    
+                    <div class="row g-4 text-center">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-light rounded-4 p-4 text-dark h-100 d-flex flex-column justify-content-between">
+                                <h5 class="fw-bold">Frontend</h5>
+                                <p>I use modern frontend tools & frameworks to build responsive web pages.</p>
+                                <span class="badge bg-primary text-warning p-2">HTML | CSS | JAVASCRIPT</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-light rounded-4 p-4 text-dark h-100 d-flex flex-column justify-content-between">
+                                <h5 class="fw-bold">Backend</h5>
+                                <p>Developing backend logic and scripting solutions.</p>
+                                <span class="badge bg-primary text-warning p-2">PYTHON</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-light rounded-4 p-4 text-dark h-100 d-flex flex-column justify-content-between">
+                                <h5 class="fw-bold">Designing Tools</h5>
+                                <p>Graphics layout design and creative assets generation.</p>
+                                <span class="badge bg-primary text-warning p-2">COREL DRAW | CANVA | PIXELLAB</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-light rounded-4 p-4 text-dark h-100 d-flex flex-column justify-content-between">
+                                <h5 class="fw-bold">Microsoft Tools</h5>
+                                <p>Office productivity suite and document management.</p>
+                                <span class="badge bg-primary text-warning p-2">WORD | EXCEL | POWERPOINT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-end mt-4">
+                        <a href="#Contact" class="btn btn-warning px-5 fw-bold">Hire me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Project" class="py-5 min-vh-100 d-flex flex-column justify-content-center" style="background: rgba(81, 32, 243, 0.35);">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-3">MY PROJECTS</h2>
+                <p class="text-center mb-5">Here are a few projects I have built recently:</p>
+                
+                <div class="row g-4 text-center">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card hover-card h-100 text-dark">
+                            <img src="/assets/images/My-Calculator.jpg" class="card-img-top project-card-img" alt="Calculator">
+                            <div class="card-body">
+                                <p class="card-text">A Full standard calculator <br><b>Made with HTML, CSS, & JS</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card hover-card h-100 text-dark">
+                            <img src="/assets/images/Expense_Tracker.jpg" class="card-img-top project-card-img" alt="Expense Tracker">
+                            <div class="card-body">
+                                <p class="card-text">An Expense tracker <br><b>Transaction history for expenses & income</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card hover-card h-100 text-dark">
+                            <img src="/assets/images/My_Loading_Animation.jpg" class="card-img-top project-card-img" alt="Loading Animation">
+                            <div class="card-body">
+                                <p class="card-text">Loading Icon <br><b>Awesome animated web loader</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card hover-card h-100 text-dark">
+                            <img src="/assets/images/Navbar_with_Logins.jpg" class="card-img-top project-card-img" alt="Navbar with Login">
+                            <div class="card-body">
+                                <p class="card-text">Full Mobile Navbar <br><b>Integrated with Login Form</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact" class="container py-5 min-vh-100 d-flex flex-column justify-content-between">
+            <div>
+                <h2 class="text-success fw-bold text-center fs-2 mb-4">CONTACT <span class="text-warning">ME</span></h2>
+                
+                <div class="row justify-content-center g-4">
+                    <div class="col-12 col-md-5 text-center text-md-start">
+                        <h3 class="fs-4 text-warning">Let's Work Together</h3>
+                        <p>Have a project in mind? Let's talk.</p>
+
+                        <h4 class="fs-5 text-warning mt-4">Get in Touch</h4>
+                        <div class="d-flex justify-content-center justify-content-md-start gap-4 mt-3">
+                            <a href="https://github.com/georgelion679" class="text-decoration-none text-light text-center">
+                                <img src="/assets/images/github.jpg" alt="Github" class="social-icon rounded-circle mb-1">
+                                <p class="mb-0">Github</p>
+                            </a>
+                            <a href="https://wa.me/234905315301" class="text-decoration-none text-light text-center">
+                                <img src="/assets/images/whatsapp.jpg" alt="WhatsApp" class="social-icon rounded-circle mb-1">
+                                <p class="mb-0">WhatsApp</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-7">
+                        <form action="mailto:georgelion679@gmail.com" class="form" method="post" enctype="text/plain">
+                            <div class="mb-3">
+                                <input type="text" name="Name" placeholder="Your Name" required class="form-control p-2">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" name="email" placeholder="Your Email" required class="form-control p-2">
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="Message" rows="5" required class="form-control" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning text-dark fw-bold px-4">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-center pt-5">
+                <small class="text-secondary">© GentleLion | 2026 | Portfolio | Developer</small>
+            </footer>
+        </section>
+    </main>
+
+    <script src="/JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
